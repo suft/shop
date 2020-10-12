@@ -5,9 +5,75 @@
     <meta charset="utf-8" />
     <title>Shop</title>
     <link rel="shortcut icon" href="/img/raccoon.svg" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <!--link rel="stylesheet" href="/css/style.css" /-->
   </head>
   <body>
-    <h1>Hello World</h1>
+    <header role="banner">
+      <!-- a class="logo" href="/" -->
+      <a href="/">
+        <img src="/img/raccoon.svg" alt="logo" />
+      </a>
+      <!-- h1 class="site-name">Scavenge</h1 -->
+      <h1>Scavenge</h1>
+      <!-- input type="search" class="search" /-->
+      <input type="search" />
+      <!--nav role="navigation" class="main-menu"-->
+      <nav role="navigation">
+        <!-- ul class="menu"-->
+        <ul>
+          <li>Account</li>
+          <li>Departments</li>
+          <li>Deals</li>
+          <li>Cart</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--article class="product"-->
+      <article>
+        <img src="/img/stool.jpg" alt="stool" />
+        <!--div class="name"-->
+        <div>
+          <h2>Unfinished Wood Bar Stool</h2>
+        </div>
+        <!--div class="price"-->
+        <div>
+          <h3>$42.69</h3>
+        </div>
+        <!--button type="button" class="purchase">Add to Cart</button-->
+        <button type="button">Add to Cart</button>
+        <!--div class="kinds"-->
+        <div>
+          <input type="radio" name="size" id="bar-height" />
+          <label for="bar-height">Bar Height (28-33 in.)</label>
+          <input type="radio" name="size" id="counter-height" />
+          <label for="counter-height">Counter Height (24-27 in.)</label>
+          <input type="radio" name="size" id="short-height" />
+          <label for="short-height">Short (16-23 in.)</label>
+        </div>
+        <!-- div class="description"-->
+        <div>
+          <p>
+            Freshen up any space with the International Concepts Dining
+            Essentials Bar Stool. This stool features a classic style for a look
+            that can easily match with your current decor. It features a
+            backless design, which gives it a chic and minimalist appearance and
+            is also great since you can conveniently tuck the stool beneath the
+            island or table. Made from wood, this stool is easy to maintain and
+            creates a homey, visually pleasing look. It is eco-friendly for
+            smarter living.
+          </p>
+        </div>
+        <!--div class="specs"-->
+        <div>
+          <ul>
+            <li>Features a wooden design, making it a durable choice</li>
+            <li>Seat Shape: Square</li>
+            <li>Weight Capacity: 200 lbs.</li>
+            <li>Weight: 12 lbs.</li>
+          </ul>
+        </div>
+      </article>
+    </main>
   </body>
 </html>
