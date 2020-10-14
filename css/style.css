@@ -1,0 +1,103 @@
+/* General Styling */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Avenir, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+}
+
+img {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Header Styling */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+}
+
+input[type="search"] {
+  font-size: 1rem;
+  border: none;
+}
+
+.search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-icon img {
+  width: 18px;
+}
+
+.search-bar {
+  border: 0.1rem solid black;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu {
+  padding: 0;
+}
+
+nav {
+  text-align: right;
+  writing-mode: vertical-rl;
+}
+
+header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: minmax(48px, 58px) min-content auto 1fr;
+  grid-template-rows: min-content;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+@supports not (gap: 1rem) {
+  .menu li {
+    margin: 0 0.5rem;
+  }
+
+  .menu li:nth-of-type(1) {
+    margin-left: 0;
+  }
+}
