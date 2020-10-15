@@ -6,6 +6,7 @@
 
 html {
   font-family: Avenir, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 body {
@@ -49,12 +50,17 @@ a {
 input[type="search"] {
   font-size: 1rem;
   border: none;
+  outline: none;
 }
 
 .search-icon {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.search-icon:hover {
+  opacity: 0.7;
 }
 
 .search-icon img {
@@ -70,8 +76,16 @@ input[type="search"] {
   align-items: center;
 }
 
+.search-bar:focus-within {
+  box-shadow: 0px 0px 0px 0.4rem rgba(0, 0, 0, 0.2);
+}
+
 .menu li {
   list-style: none;
+}
+
+.menu li:hover {
+  opacity: 0.7;
 }
 
 .menu {
@@ -100,4 +114,108 @@ header {
   .menu li:nth-of-type(1) {
     margin-left: 0;
   }
+}
+
+/* Product Styling */
+
+.product img {
+  min-width: 300px;
+  max-width: 500px;
+  width: auto;
+  align-self: center;
+  flex: 0 0 auto;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 3rem 1rem 3rem;
+  gap: 2rem;
+}
+
+.product-item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.name {
+  font-size: 1.6rem;
+}
+
+.price {
+  font-variant-numeric: slashed-zero;
+  font-size: 1rem;
+}
+
+.price span {
+  font-size: 2.6rem;
+  font-weight: bolder;
+}
+
+.purchase {
+  font-size: 1rem;
+  font-weight: 100;
+  color: white;
+  background-color: black;
+  border: 0.1rem solid black;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.purchase:hover {
+  opacity: 0.7;
+}
+
+.kinds {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.kinds input {
+  visibility: hidden;
+}
+
+.kinds label {
+  cursor: pointer;
+}
+
+.kinds input:checked + label {
+  border: 0.1rem solid black;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+}
+
+.description {
+  line-height: 1.8rem;
+  min-width: 36ch;
+  max-width: 68ch;
+  text-align: left;
+}
+
+.specs {
+  align-self: start;
+  line-height: 1.8rem;
+  padding-left: 1.5rem;
+}
+
+.specs ul {
+  list-style-type: none;
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.specs ul li::before {
+  display: inline-block;
+  content: "";
+  border-radius: 0.375rem;
+  border: 0.15rem solid black;
+  height: 0.5rem;
+  width: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: white;
 }
