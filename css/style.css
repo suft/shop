@@ -201,6 +201,10 @@ header {
   font-size: 1.6rem;
 }
 
+.name h2 {
+  text-align: center;
+}
+
 .price {
   font-variant-numeric: slashed-zero;
   font-size: 1rem;
