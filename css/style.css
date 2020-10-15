@@ -333,7 +333,6 @@ header {
   order: -1;
   max-width: 86%;
   align-self: center;
-  /* object-fit: contain; */
 }
 
 .other-item > button {
@@ -344,4 +343,19 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1rem;
+}
+
+/* Copyright Styling */
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  font-weight: 100;
+}
+
+.copyright > span {
+  font-size: 1.2rem;
 }
