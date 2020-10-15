@@ -47,9 +47,11 @@ a {
 }
 
 input[type="search"] {
+  min-width: 200px;
   font-size: 1rem;
   border: none;
   outline: none;
+  -webkit-appearance: none;
 }
 
 .search-icon {
@@ -98,7 +100,7 @@ nav {
 
 header {
   display: grid;
-  align-items: center;
+  align-items: end;
   grid-template-columns: max-content min-content min-content auto;
   gap: 1rem;
   padding: 1rem;
