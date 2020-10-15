@@ -1,6 +1,8 @@
 /* General Styling */
 
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -17,7 +19,8 @@ nav {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
 }
 
@@ -203,6 +206,11 @@ header {
 
 .name h2 {
   text-align: center;
+}
+
+.product .price {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 .price {
