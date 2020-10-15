@@ -16,7 +16,8 @@ nav {
   margin: 0;
 }
 
-h1 {
+h1,
+h2 {
   margin: 0;
 }
 
@@ -165,8 +166,10 @@ header {
 /* Product Styling */
 
 .product .image-container {
-  min-width: 70vw;
+  display: flex;
+  min-width: 36vw;
   max-width: 500px;
+  justify-content: center;
 }
 
 .product img {
@@ -180,6 +183,10 @@ header {
   flex-wrap: wrap;
   padding: 1rem 3rem 1rem 3rem;
   justify-content: center;
+}
+
+.product > * {
+  margin: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .product-item {
