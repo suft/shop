@@ -172,6 +172,10 @@ header {
 }
 
 .kinds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
@@ -182,6 +186,8 @@ header {
 
 .kinds label {
   cursor: pointer;
+  white-space: nowrap;
+  padding: 0.5rem;
 }
 
 .kinds input:checked + label {
