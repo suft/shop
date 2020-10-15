@@ -305,3 +305,43 @@ header {
   margin-left: 0.5rem;
   background-color: white;
 }
+
+/* Footer Styling */
+
+.other-title {
+  text-align: center;
+  padding: 2rem;
+}
+
+.other-item {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.other-item > * {
+  margin: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.other-item span {
+  font-size: 1.6rem;
+}
+
+.other-item > img {
+  order: -1;
+  max-width: 86%;
+  align-self: center;
+  /* object-fit: contain; */
+}
+
+.other-item > button {
+  max-width: 46%;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
