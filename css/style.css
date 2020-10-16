@@ -342,6 +342,11 @@ main {
   align-self: center;
 }
 
+.other-item > img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 .other-item > button {
   max-width: 46%;
 }
