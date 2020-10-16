@@ -1,4 +1,4 @@
-# [**Shop**](https://github.com/suft/shop)
+# <img src="img/favicon.ico" width="50px" align="center" /> [**Shop**](https://github.com/suft/shop)
 
 By [Sufien Tout](https://github.com/suft)
 
